@@ -1,6 +1,10 @@
 function ListGroup() {
-  const items = ['matta', 'sample2', 'sample3', 'sample4'];
-  return (
+  let items = ['matta', 'sample2', 'sample3', 'sample4'];
+  items = []
+  if(items.length === 0 ){
+    return <p>no items found</p>
+  }
+ return (
     <>
       <ul className="list-group">
         {items.map((m) => (
